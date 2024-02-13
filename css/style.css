@@ -1,3 +1,5 @@
+@import url(reset.css);
+
 /* lato-regular - latin */
 @font-face {
 	font-family: 'Lato';
@@ -26,8 +28,85 @@ html {
 	box-sizing: border-box;
 }
 
+body {
+	font-family: 'Lato';
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
+	color: #102746;
+}
+
 *,
 ::before,
 ::after {
 	box-sizing: inherit;
 }
+
+.wrapper {
+	max-width: 1060px;
+	margin: 0 auto;
+}
+
+/* header style start */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.header__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding-top: 56px;
+}
+
+.header__logo {}
+
+.header__logo-link {}
+
+.header__logo-pic {}
+
+.header__nav {}
+
+.header__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header__item {
+	margin-right: 82px;
+}
+
+.header__item:last-child {
+	margin-right: 0;
+}
+
+.header__link {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+	opacity: 0.75;
+}
+
+/* header style end */
+
+/* intro style start */
+.intro {
+	background: url(../img/intro-bg.jpeg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+}
+
+/* intro style end */
